@@ -32,7 +32,10 @@ app.get("/contact", (req, res)=>{
 });
 
 
-
+//Compose
+app.get("/compose", (req, res)=>{
+  res.render('compose');
+});
 
 
 
