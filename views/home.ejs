@@ -17,7 +17,8 @@
 <%# using forEach to make for loop simpler %>
 
 <% postsData.forEach((data)=>{  %>
-<%    console.log(data.blogTitle); %>
+<h1><%= data.blogTitle %></h1>
+<p> <%= data.blogContent %></p>
 <% });  %>
 
 <%- include('partials/footer') -%>
