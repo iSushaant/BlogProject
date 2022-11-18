@@ -4,4 +4,20 @@
 
 <p><%= homeHeading %></p>
 
+<%# --irrelevant below-- %>
+
+<%# console.log(postsData); %>
+
+<%# for(let i=0; i<postsData.length ; i++){ %>
+<%#    console.log(postsData[i].blogTitle);   %>
+<%# } %>
+
+<%# --irrelevant above-- %>
+
+<%# using forEach to make for loop simpler %>
+
+<% postsData.forEach((data)=>{  %>
+<%    console.log(data.blogTitle); %>
+<% });  %>
+
 <%- include('partials/footer') -%>
