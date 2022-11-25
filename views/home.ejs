@@ -9,7 +9,7 @@
 <%# console.log(postsData); %>
 
 <%# for(let i=0; i<postsData.length ; i++){ %>
-<%#    console.log(postsData[i].blogTitle);   %>
+<%#    console.log((postsData[i].blogTitle);   %>
 <%# } %>
 
 <%# --irrelevant above-- %>
@@ -17,8 +17,14 @@
 <%# using forEach to make for loop simpler %>
 
 <% postsData.forEach((data)=>{  %>
+    
 <h1><%= data.blogTitle %></h1>
-<p> <%= data.blogContent %></p>
+
+<p> 
+    <%= data.blogContent.substr(0, 100) + "..." %>
+    <a href='posts/<%= data.blogTitle %>'>Read more</a>
+</p>
+
 <% });  %>
 
 <%- include('partials/footer') -%>
